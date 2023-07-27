@@ -42,15 +42,20 @@ Please put the pretrained weights into ./ckpts/.
   ```
 
 ## Main Results
+| method | config            | mAP      | NDS        |   config |   download |
+|:--------:|:--------:|:----------:|:---------:|:--------:|:-------------:|
+| Ours | petr_depth_gtpe_r50dcn_gridmask_c5   | 39.98%     | 40.92%      | [config](projects/configs/petr_depth/petr_depth_gtpe_r50dcn_gridmask_c5.py)  |   [log](https://drive.google.com/file/d/1UQ6ZJ2oj5R7wuD7XsTzZbPhWKYMRoSW2/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1hpXr6HSG0Q1YUL1g0_RD-t4Jiomi1CE1/view?usp=share_link)     |
+| PETR's | vov-p4-800x320   | 37.8%     | 42.6%    | [config](projects/configs/petr/petr_vovnet_gridmask_p4_800x320.py)   |   [log](https://drive.google.com/file/d/1eG914jDVK3YXvbubR8VUjP2NnzYpDvHC/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1-afU8MhAf92dneOIbhoVxl_b72IAWOEJ/view?usp=sharing)        |
+| Ours | vov-p4-800x320   | 39.8%     | 44.6%     | [config](projects/configs/petr_depth/petr_depth_3dpe_dfl_vovnet_wogridmask_p4_800x320_pdg.py)  |   [log](https://drive.google.com/file/d/111s8kTUYABoe-OvDVf0K_TrDR6JtQeHG/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1reVRYPWlfofKrutvY8WTX9eO_l8uKRBW/view?usp=sharing)     |
+| PETRv2's | vov-p4-800x320   | 41.0%     | 50.3%    | [config](projects/configs/petrv2/petrv2_vovnet_gridmask_p4_800x320.py)  | [log](https://drive.google.com/file/d/1QcVSDHoUAcFLqziwZrBn5A2oAjH86WiO/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1tv_D8Ahp9tz5n4pFp4a64k-IrUZPu5Im/view?usp=sharing)    
+| Ours | vov-p4-800x320   | 43.2%     | 51.9%    | [config](projects/configs/petrv2_depth/petrv2_depth_3dpe_dfl_vovnet_wogridmask_p4_800x320_pdg.py)  |   [log](https://drive.google.com/file/d/1l1gDYek6twVGb0XySMydbFqh32TthZuo/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1hJLwE-9EG0H8UoB1DYkpwarJPdRd9NNe/view?usp=sharing)     |
 
-| config            | mAP      | NDS     |training    |   config |   download |
-|:--------:|:----------:|:---------:|:--------:|:--------:|:-------------:|
-| PETR-vov-p4-800x320 (PETR's)   | 37.8%     | 42.6%    | 17hours  | [config](projects/configs/petr/petr_vovnet_gridmask_p4_800x320.py)   |   [log](https://drive.google.com/file/d/1eG914jDVK3YXvbubR8VUjP2NnzYpDvHC/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1-afU8MhAf92dneOIbhoVxl_b72IAWOEJ/view?usp=sharing)        |
-| petr_depth_3dpe_dfl_vovnet_wogridmask_p4_800x320 (Ours)   | 39.8%     | 44.6%    | 15hours  | [config](projects/configs/petr_depth/petr_depth_3dpe_dfl_vovnet_wogridmask_p4_800x320_pdg.py)  |   [log](https://drive.google.com/file/d/111s8kTUYABoe-OvDVf0K_TrDR6JtQeHG/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1reVRYPWlfofKrutvY8WTX9eO_l8uKRBW/view?usp=sharing)     |
-| PETRv2-vov-p4-800x320 (PETR's)   | 41.0%     | 50.3%    | 30hours  | [config](projects/configs/petrv2/petrv2_vovnet_gridmask_p4_800x320.py)  | [log](https://drive.google.com/file/d/1QcVSDHoUAcFLqziwZrBn5A2oAjH86WiO/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1tv_D8Ahp9tz5n4pFp4a64k-IrUZPu5Im/view?usp=sharing)    
-| petrv2_depth_3dpe_dfl_vovnet_wogridmask_p4_800x320 (Ours)   | 43.2%     | 51.9%    | 27hours  | [config](projects/configs/petrv2_depth/petrv2_depth_3dpe_dfl_vovnet_wogridmask_p4_800x320_pdg.py)  |   [log](https://drive.google.com/file/d/1l1gDYek6twVGb0XySMydbFqh32TthZuo/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1hJLwE-9EG0H8UoB1DYkpwarJPdRd9NNe/view?usp=sharing)     |
-| petr_depth_gtpe_r50dcn_gridmask_c5 (Ours)   | 39.98%     | 40.92%    | 28hours  | [config](projects/configs/petr_depth/petr_depth_gtpe_r50dcn_gridmask_c5.py)  |   [log](https://drive.google.com/file/d/1UQ6ZJ2oj5R7wuD7XsTzZbPhWKYMRoSW2/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1hpXr6HSG0Q1YUL1g0_RD-t4Jiomi1CE1/view?usp=share_link)     |
-
+Extand on streamPETR
+| method | config | Pretrain | mAP      | NDS        
+|:--------:|:--------:|:----------:|:---------:|:---------:|
+| StreamPETR      | v2-99-900q | FCOS3D | 48.2% | 57.1% |
+| Ours            | v2-99-900q | FCOS3D | 49.75% | 58.19% |
+| Ours(GT_Depth)  | v2-99-900q | FCOS3D | 55.30% | 61.78% |
 
 ## Acknowledgement
 Many thanks to the authors of [PETR](https://github.com/megvii-research/PETR), and the main code is based on it.
