@@ -55,9 +55,9 @@ Please put the pretrained weights into ./ckpts/.
 Extand on streamPETR (more details please refer to https://github.com/FiveLu/stream3dppe)
 | method | config | Pretrain | mAP      | NDS        
 |:--------:|:--------:|:----------:|:---------:|:---------:|
-| StreamPETR      | v2-99-900q | FCOS3D | 48.2% | 57.1% |
-| Ours            | v2-99-900q | FCOS3D | 49.75% | 58.19% |
-| Ours(GT_Depth)  | v2-99-900q | FCOS3D | 55.30% | 61.78% |
+| StreamPETR      | v2-99-900q-800x320 | FCOS3D | 48.2% | 57.1% |
+| Ours            | v2-99-900q-800x320 | FCOS3D | 49.75% | 58.19% |
+| Ours(GT_Depth)  | v2-99-900q-800x320 | FCOS3D | 55.30% | 61.78% |
 
 ## Acknowledgement
 Many thanks to the authors of [PETR](https://github.com/megvii-research/PETR), and the main code is based on it.
