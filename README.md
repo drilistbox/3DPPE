@@ -2,7 +2,9 @@
 <!-- ## Introduction -->
 
 This repository is an official implementation of [3DPPE](https://arxiv.org/abs/2211.14710) 
-And we also extand the 3DPPE on streamPETR, please refer to .
+
+
+And we also extand the 3DPPE on streamPETR, please refer to https://github.com/FiveLu/stream3dppe.
 
 <div align="center">
   <img src="figs/overview.png"/>
@@ -50,7 +52,7 @@ Please put the pretrained weights into ./ckpts/.
 | PETRv2's | vov-p4-800x320   | 41.0%     | 50.3%    | [config](projects/configs/petrv2/petrv2_vovnet_gridmask_p4_800x320.py)  | [log](https://drive.google.com/file/d/1QcVSDHoUAcFLqziwZrBn5A2oAjH86WiO/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1tv_D8Ahp9tz5n4pFp4a64k-IrUZPu5Im/view?usp=sharing)    
 | Ours | vov-p4-800x320   | 43.2%     | 51.9%    | [config](projects/configs/petrv2_depth/petrv2_depth_3dpe_dfl_vovnet_wogridmask_p4_800x320_pdg.py)  |   [log](https://drive.google.com/file/d/1l1gDYek6twVGb0XySMydbFqh32TthZuo/view?usp=sharing) / [gdrive](https://drive.google.com/file/d/1hJLwE-9EG0H8UoB1DYkpwarJPdRd9NNe/view?usp=sharing)     |
 
-Extand on streamPETR
+Extand on streamPETR (more details please refer to https://github.com/FiveLu/stream3dppe)
 | method | config | Pretrain | mAP      | NDS        
 |:--------:|:--------:|:----------:|:---------:|:---------:|
 | StreamPETR      | v2-99-900q | FCOS3D | 48.2% | 57.1% |
